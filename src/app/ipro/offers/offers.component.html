@@ -1,0 +1,27 @@
+<div class="row">
+  <div class="col flex" *ngFor="let offer of offers">
+    <div class="container">
+      <div class="overlay">
+        <div class="items"></div>
+        <div class="items head">
+          <p>Try our:
+            <br>
+            {{offer.name}}
+          </p>
+          <hr>
+        </div>
+        <div class="items offer">
+          <p>Start date:</p>
+          <p>{{offer.contractStartDate | date}}</p>
+          <br>
+          <p>End date:</p>
+          <p>{{offer.contractEndDate | date}}</p>
+        </div>
+        <div class="items cart">
+          <mat-icon class="icon">shoping_cart</mat-icon>
+          <span class="icon">ADD TO CART</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

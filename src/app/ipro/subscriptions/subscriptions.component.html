@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="col flex" *ngFor="let subscribe of subscriptions">
+        <div class="container">
+            <div class="overlay">
+                <div class="items"></div>
+                <div class="items head">
+                    <p>Try our:
+                        <br>
+                        {{subscribe.name}} offer
+                    </p>
+                    <hr>
+                </div>
+                <div class="items offer">
+                    <p>Type:</p>
+                    <p>{{subscribe.type}}</p>
+                </div>
+                <div class="items cart">
+                    <mat-icon class="icon">shoping_cart</mat-icon>
+                    <span class="icon">ADD TO CART</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
